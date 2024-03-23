@@ -1,12 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     /* box color */
-    --box-color: ;
-    --box-color-text: ;
+    --box-color: #181A1E;
+    --box-color-text: #fff;
     /* background color */
-    --back-color: ;
-    --back-color-text: ;
+    --back-color: #25252C;
+    --back-color-text: #fff;
+    /* button color */
+    --button-success-color: #339424;
+    --button-danger-color: #BA1111;
+    --button-warning-color: #CC5411;
+    --button-primary-color: #839BF1;
+    --button-disabled-color: #839BF1;
 }
-
+body,html{
+    font-family: "Overpass", sans-serif;
+    top:0;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--back-color);
+}
 .color-box{
-    
+    background-color: var(--box-color);
+}
+.color-text-fff{
+    color: var(--back-color-text);
+}
+.button-button-primary{
+    background-color: var(--button-primary-color);
+    border: none;
+    border-radius: 20px;
 }
