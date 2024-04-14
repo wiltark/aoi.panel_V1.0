@@ -81,6 +81,11 @@ body{
     padding-bottom: 20px;
     box-sizing: content-box;
 }
+.welcom{
+    text-align: center;
+}
+
+
 
 .sidebar .logo .logo-name span{
     color: var(--dark);
@@ -468,7 +473,24 @@ body{
     text-align: left;
     border-bottom: 1px solid var(--grey);
 }
-
+.buttonreboot{
+    margin: 5px 2px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+        color: var(--light);
+        background: var(--warning);
+        border-radius: 20px;
+}
+.button{
+    margin: 5px 2px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+        color: var(--light);
+        background: var(--danger);
+        border-radius: 20px;
+}
 .content main .bottom-data .orders table td{
     padding: 16px 0;
 }
