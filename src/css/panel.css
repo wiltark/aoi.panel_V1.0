@@ -13,7 +13,47 @@
     --light-warning: #FFF2C6;
     --success: #339424;
     --light-success: #BBF7D0;
-}
+}  
+  h1 {
+    margin-bottom: 2000px;
+  }
+  /* For Demo only */
+  .cd__main{
+     position: relative;
+     width: 360px !important;
+     height: 720px;
+     border: 2px solid #bbb;
+  }
+  /* end demo only */
+  .mobile-bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    will-change: transform;
+    transform: translateZ(0);
+    display: flex;
+    height: 50px;
+    box-shadow: 0 -2px 5px -2px #333;
+    background-color: var(--dark);
+  }
+  .mobile-bottom-nav__item {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mobile-bottom-nav__item--active {
+    color: red;
+  }
+  .mobile-bottom-nav__item-content {
+    display: flex;
+    flex-direction: column;
+  }
+
 
 * {
     margin: 0;
@@ -613,7 +653,12 @@ body {
 .content main .bottom-data .reminders .task-list li:last-child {
     margin-bottom: 0;
 }
+@media screen and (min-width: 768px) {
+    .mobile-bottom-nav {
+        display: none;
+      }
 
+}
 @media screen and (max-width: 768px) {
     .sidebar.close~.content {
         width: 100%;
