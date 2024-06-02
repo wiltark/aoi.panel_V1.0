@@ -678,6 +678,9 @@ body {
     .mobile-bottom-nav {
         display: none;
       }
+      nav .imgp{
+    display: none;
+}
 
 }
 @media screen and (max-width: 324px) {
